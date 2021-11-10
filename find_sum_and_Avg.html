@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<script>
+			function findSum(){
+				var sum = 0;
+				for (var i=0;i<arguments.length;i++){
+					sum = sum + arguments[i];
+				}
+				return sum;
+			}
+			
+			function findAverage(){
+				var sum = 0;
+				for (var i=0; i<arguments.length;i++){
+					sum = sum + arguments[i];
+				}
+				var avg = sum/arguments.length;
+				return avg;
+			}
+		</script>
+	</head>
+	
+	<body>
+		<script>
+			document.write("The Sum Of Parameters = "+findSum(1,2,3,4,5,33,45,6,9)+"<br>")
+			document.write("The Sum Of Parameters = "+findSum(1,2,3,4,5)+"<br>")
+			document.write("The Average Of Parameters = "+findAverage(1,2,3,4,5,6,5,73,5)+"<br>")
+			document.write("The Average Of Parameters = "+findAverage(1,2,3,4,5,6,7)+"<br>")
+		</script>
+	</body>
+
+</html>
